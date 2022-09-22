@@ -4,10 +4,6 @@ import {Model} from "../Models/Model";
 import {Component, Suspense} from "react";
 
 export default class Scene extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div {...this.props}>
