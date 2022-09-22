@@ -1,38 +1,16 @@
-.App {
-  text-align: center;
+h1 {
+  @apply text-5xl font-bold mb-4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  @apply relative bg-gradient-to-r from-[#fe32ab] to-[#a058bc] bg-clip-text after:absolute after:w-full after:h-px
+  after:bg-gradient-to-r after:from-[#fe32ab] after:to-[#a058bc] after:bottom-0 after:left-0 after:z-[-1]
+  after:scale-x-0 hover:after:scale-x-100 after:transform after:duration-300 after:ease-out;
+  -webkit-text-fill-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-gradient  {
+  @apply w-max z-10 text-lg text-white px-5 py-2 rounded overflow-hidden relative after:transition-all before:transition-all after:duration-500 before:duration-500
+  after:w-full after:h-full after:absolute after:z-[-1] after:top-0 after:left-0 after:bg-gradient-to-r after:from-[#fe32ab] after:to-[#a058bc] hover:after:opacity-0
+  before:w-full before:h-full before:absolute before:z-[-1] before:top-0 before:left-0 before:bg-gradient-to-r before:from-[#a058bc] before:to-[#fe32ab] before:opacity-50 hover:before:opacity-100;
 }
